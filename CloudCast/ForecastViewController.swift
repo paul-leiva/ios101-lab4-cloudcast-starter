@@ -50,8 +50,8 @@ class ForecastViewController: UIViewController {
     forecastImageView.image = forecast.weatherCode.image
     descriptionLabel.text = forecast.weatherCode.description
     temperatureLabel.text = "\(forecast.temperature)"
-    windspeedLabel.text = "\(forecast.windSpeed) mph"
-    windDirectionLabel.text = "\(forecast.windDirection)°"
+    windspeedLabel.text = "\(forecast.windspeed) mph"
+    windDirectionLabel.text = "\(forecast.winddirection)°"
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MMMM d, yyyy"
     dateLabel.text = dateFormatter.string(from: Date())

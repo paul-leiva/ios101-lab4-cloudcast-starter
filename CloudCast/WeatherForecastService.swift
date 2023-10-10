@@ -52,9 +52,9 @@ class WeatherForecastService {
         let temperature = currentWeather["temperature"] as! Double
         // weather code
         let weatherCodeRaw = currentWeather["weathercode"] as! Int
-        return CurrentWeatherForecast(windSpeed: windSpeed,
-                                      windDirection: windDirection,
+        return CurrentWeatherForecast(windspeed: windSpeed,
+                                      winddirection: windDirection,
                                       temperature: temperature,
-                                      weatherCodeRaw: weatherCodeRaw)
+                                      weathercodeRaw: weatherCodeRaw)
       }
 }
